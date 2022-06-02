@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <title>Vite App</title>
   </head>
   <body>
@@ -16,17 +23,43 @@
         </ul>
       </nav>
       <section class="hero">
-        <div class="contain-action">
-          <div class="contain-name">
-            <h1>Hi, I am Kim, I am a</h1>
-            <span>web developer</span>
+        <span class="dark-layer"></span>
+        <div class="contain-mask-effect">
+          <div class="contain-action">
+            <div class="contain-name">
+              <h1>Hi, I am Kim,</h1>
+              <span>I am a</span>
+              <span>web developer</span>
+            </div>
+            <div class="contain-button">
+              <button>Contact me</button>
+            </div>
           </div>
-          <div class="contain-button">
-            <button>Contact me</button>
+          <div class="contain-image">
+            <div class="contain-image-fit">
+              <img src="./assets/model-kim.png" alt="" />
+            </div>
           </div>
         </div>
-        <div class="contain-image"></div>
+        <div class="contain-mask-effect copy" aria-hidden="true">
+          <div class="contain-action">
+            <div class="contain-name">
+              <h1>Hi, I am Kim,</h1>
+              <span>I am a</span>
+              <span class="span-color">web developer</span>
+            </div>
+            <div class="contain-button">
+              <button>Contact me</button>
+            </div>
+          </div>
+          <div class="contain-image">
+            <div class="contain-image-fit">
+              <img src="./assets/model-kim.png" alt="" />
+            </div>
+          </div>
+        </div>
       </section>
+  
     </div>
     <script type="module" src="/main.js"></script>
   </body>
