@@ -5,67 +5,94 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background: #18191C;
+  font-family: "Roboto", sans-serif;
+  background: #18191c;
+}
 
+.container {
+  position: relative;
+  height: 100vh;
 }
 
 .nav-bar {
   display: flex;
-  justify-content: center;
-  padding: 1rem 0rem;
-  background: #18191C;
-  
-}
-
-.nav-bar ul {
-  display: flex;
-  justify-content: space-between;
-  width: 30%;
+  justify-content: flex-end;
+  padding: 2rem 3rem 0rem 0rem;
+  position: relative;
+  z-index: 10;
 }
 
 .nav-content-link {
+  border: 1px solid #00ffee;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   list-style-type: none;
-  color: #F3FFFE;
+  color: #f3fffe;
+  /* padding: rem; */
+}
+.icon {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.nav-link.burger {
+  position: relative;
+  z-index: 10;
 }
 
 .hero {
-  background: #18191C;
-  height: calc(100vh - 51px);
-  position: relative;
-}
-
-.contain-mask-effect {
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
-  opacity: .5;
-}
-
-.contain-mask-effect.copy {
-  --mask: radial-gradient(circle at var(--x, 5%) var(--y, 35%), black 5%, transparent 30%);
-  background: #383a3f;
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   right: 0;
+  z-index: 5;
+}
+
+.contain-mask-effect {
+  display: flex;
+  justify-content: space-between;
+  position: inherit;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: 5;
+}
+
+.contain-mask-effect.copy {
+  --mask: radial-gradient(
+    circle at var(--x, 15%) var(--y, 50%),
+    black 4%,
+    transparent 25%
+  );
+  background: #7f8189af;
+  position: inherit;
+  width: 100%;
+  height: 100%;
   -webkit-mask: var(--mask);
   mask: var(--mask);
   opacity: 1;
-  filter:  brightness(1.5);
+  filter: brightness(1.5);
 }
 
 .span-color {
-  color: #FF03A0;
+  color: #ff03a0;
 }
 
 .contain-action {
-  padding: 10rem 0rem 0rem 3rem ;
+  padding: 10rem 0rem 0rem 6rem;
 }
 
 .contain-name {
-  color: #F3FFFE;
+  color: #f3fffe;
   font-size: 3rem;
 }
 
@@ -75,17 +102,21 @@ body {
 
 .contain-button button {
   border: none;
-  border-radius: 40px;
-  background: #00FFEE;
-  color: #18191C;
+  border-radius: 25px;
+  background: #00ffee;
+  color: #18191c;
   cursor: pointer;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  padding: 1rem 1.8rem ;
+  padding: 1rem 2rem;
+}
+
+.contain-mask-effect.copy button {
+  box-shadow: 2px 10px 30px 1px rgba(0, 255, 238, 0.1);
 }
 
 .contain-image {
-  padding-top: 3rem;
+  padding-top: 8rem;
 }
 
 .contain-image-fit {

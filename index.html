@@ -14,12 +14,23 @@
     <title>Vite App</title>
   </head>
   <body>
+      <svg style="position: absolute;" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <symbol   id="icon-menu" viewBox="0 0 61 32">     
+        <line y1="2" x2="48" y2="2" stroke="#EFEFEF" stroke-width="4"/>
+        <line x1="11" y1="16" x2="61" y2="16" stroke="#EFEFEF" stroke-width="4"/>
+        <line y1="30" x2="48" y2="30" stroke="#EFEFEF" stroke-width="4"/>
+      </symbol>
+    </svg>
     <div class="container">
       <nav class="nav-bar">
         <ul>
-          <li class="nav-content-link"><a class="nav-link"></a>Home</li>
-          <li class="nav-content-link"><a class="nav-link"></a>Projects</li>
-          <li class="nav-content-link"><a class="nav-link"></a>About</li>
+          <li class="nav-content-link">
+            <a href="#" class="nav-link burger">
+              <svg class="icon icon-menu">
+                <use xlink:href="#icon-menu"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
       </nav>
       <section class="hero">
@@ -28,7 +39,7 @@
             <div class="contain-name">
               <h1>Hi, I am Kim,</h1>
               <span>I am a</span>
-              <span>web developer</span>
+              <span>web developer.</span>
             </div>
             <div class="contain-button">
               <button>Contact me</button>
@@ -45,7 +56,7 @@
             <div class="contain-name">
               <h1>Hi, I am Kim,</h1>
               <span>I am a</span>
-              <span class="span-color">web developer</span>
+              <span class="span-color">web developer.</span>
             </div>
             <div class="contain-button">
               <button>Contact me</button>
@@ -58,7 +69,6 @@
           </div>
         </div>
       </section>
-  
     </div>
     <script type="module" src="/main.js"></script>
   </body>
