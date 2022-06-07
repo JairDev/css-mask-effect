@@ -125,6 +125,7 @@ body {
 
 .contain-image {
   padding-top: 8rem;
+  overflow: hidden;
 }
 
 .contain-image-fit {
