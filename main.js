@@ -1,6 +1,6 @@
 import gsap from "gsap";
 
-const hero = document.querySelector(".contain-mask-effect.copy");
+const hero = document.querySelector(".hero.copy");
 
 window.addEventListener("mousemove", (e) => {
   const x = Math.round((e.clientX / window.innerWidth) * 100);
